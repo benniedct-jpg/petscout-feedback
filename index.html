@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="펫스카웃 2026 — 강원 고성 반려동물 캠핑 페스티벌">
+  <meta property="og:description" content="300개 사이트, 3,000명. 9월 4~6일 고성 세계잼버리 수련장. 반려동물 동반 전국 최대 캠핑 페스티벌.">
+  <meta property="og:image" content="./assets/og.jpg">
+  <meta property="og:url" content="https://[배포URL]">
+  <meta property="og:locale" content="ko_KR">
+  <meta name="description" content="300개 사이트, 약 3,000명. 전국 최대 반려동물 캠핑 페스티벌. 2026년 9월 4~6일 강원도 고성 세계잼버리 수련장.">
+  <title>펫스카웃 2026 | 강원 고성 반려동물 캠핑 페스티벌</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preload" as="style"
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;700&family=Noto+Sans+KR:wght@400;500;700&display=swap"
+    onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;700&family=Noto+Sans+KR:wght@400;500;700&display=swap">
+  </noscript>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --green:      #1A2F0E;
+      --green-mid:  #2A4A14;
+      --green-lt:   #3A641E;
+      --amber:      #C8841A;
+      --amber-lt:   #E09B28;
+      --cream:      #F7F4EE;
+      --white:      #FFFFFF;
+      --text:       #1C1C1C;
+      --muted:      #68624F;
+      --border:     #E2DAC8;
+
+      --serif: 'Noto Serif KR', Georgia, serif;
+      --sans:  'Noto Sans KR', -apple-system, sans-serif;
+
+      /* 타입 스케일 */
+      --t-hero:   clamp(30px, 5.5vw, 56px);
+      --t-h2:     clamp(22px, 3.5vw, 38px);
+      --t-h3:     clamp(17px, 2vw, 22px);
+      --t-body:   16px;
+      --t-sm:     14px;
+      --t-xs:     12px;
+
+      /* 스페이싱 */
+      --sec:   88px;
+      --sec-s: 64px;
+      --gap:   24px;
+    }
+
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--sans);
+      font-size: var(--t-body);
+      line-height: 1.7;
+      color: var(--text);
+      background: var(--cream);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── 공통 ────────────────────────────── */
+    .wrap { max-width: 1040px; margin: 0 auto; padding: 0 24px; }
+    .sec  { padding: var(--sec) 0; }
+    .sec--s { padding: var(--sec-s) 0; }
+
+    .eyebrow {
+      display: block;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      color: var(--amber);
+      margin-bottom: 12px;
+    }
+    h2 {
+      font-family: var(--serif);
+      font-size: var(--t-h2);
+      line-height: 1.25;
+      word-break: keep-all;
+      margin-bottom: 16px;
+    }
+    h3 {
+      font-family: var(--serif);
+      font-size: var(--t-h3);
+      line-height: 1.35;
+      margin-bottom: 8px;
+    }
+    .lead {
+      font-size: var(--t-body);
+      line-height: 1.85;
+      color: var(--muted);
+      word-break: keep-all;
+      max-width: 640px;
+    }
+    .lead strong { color: var(--text); font-weight: 700; }
+    hr.div { border: none; border-top: 1px solid var(--border); }
+
+    /* ── HERO ────────────────────────────── */
+    .hero {
+      min-height: 100svh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 0 24px 72px;
+      background: var(--green) url('./assets/hero.jpg') center / cover no-repeat;
+      position: relative;
+    }
+    .hero::after {
+      content: '';
+      position: absolute; inset: 0;
+      background: linear-gradient(
+        to top,
+        rgba(6,14,2,.9)   0%,
+        rgba(6,14,2,.35)  55%,
+        transparent       100%
+      );
+      pointer-events: none;
+    }
+    .hero__inner { position: relative; z-index: 1; max-width: 760px; }
+
+    .hero__badge {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: var(--amber-lt);
+      border: 1px solid var(--amber-lt);
+      padding: 5px 14px;
+      border-radius: 2px;
+      margin-bottom: 24px;
+    }
+    .hero h1 {
+      font-family: var(--serif);
+      font-size: var(--t-hero);
+      line-height: 1.2;
+      color: var(--white);
+      word-break: keep-all;
+      margin-bottom: 18px;
+    }
+    .hero__sub {
+      font-size: clamp(15px, 1.8vw, 18px);
+      line-height: 1.75;
+      color: rgba(255,255,255,.72);
+      word-break: keep-all;
+      margin-bottom: 40px;
+    }
+    .hero__ctas { display: flex; align-items: center; flex-wrap: wrap; gap: 14px; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 700;
+      text-decoration: none;
+      border-radius: 3px;
+      transition: opacity .18s;
+      touch-action: manipulation;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .btn--primary {
+      background: var(--amber);
+      color: var(--white);
+      font-size: 16px;
+      padding: 15px 36px;
+    }
+    .btn--ghost {
+      border: 1px solid rgba(255,255,255,.4);
+      color: rgba(255,255,255,.85);
+      font-size: 15px;
+      padding: 14px 28px;
+    }
+    .btn:hover { opacity: .86; }
+    .btn:active { opacity: .7; }
+
+    /* ── STRIP ───────────────────────────── */
+    .strip {
+      background: var(--green);
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .strip__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px 28px;
+      border-right: 1px solid rgba(255,255,255,.1);
+      color: var(--white);
+      min-width: 110px;
+    }
+    .strip__item:last-child { border-right: none; }
+    .strip__label {
+      font-size: 10px;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,.4);
+      margin-bottom: 4px;
+    }
+    .strip__val {
+      font-family: var(--serif);
+      font-size: 15px;
+      font-weight: 700;
+      text-align: center;
+      line-height: 1.4;
+    }
+
+    /* ── SITE CARDS ──────────────────────── */
+    .site-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 14px;
+      margin-top: 44px;
+    }
+    .site-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 22px 18px;
+      text-align: center;
+    }
+    .site-card__num {
+      font-family: var(--serif);
+      font-size: 32px;
+      font-weight: 700;
+      color: var(--green-mid);
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+    .site-card__unit { font-size: var(--t-sm); color: var(--muted); }
+    .site-card__name { font-size: var(--t-sm); font-weight: 700; margin: 8px 0 2px; }
+    .site-card__size { font-size: var(--t-xs); color: var(--amber); letter-spacing: .06em; }
+    .site-card__desc { font-size: var(--t-xs); color: var(--muted); margin-top: 4px; line-height: 1.6; }
+
+    /* ── TIMELINE ────────────────────────── */
+    .tl { display: flex; flex-direction: column; gap: 40px; margin-top: 48px; }
+    .tl-day__head {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--green-mid);
+      color: var(--white);
+      font-size: 13px;
+      font-weight: 700;
+      padding: 7px 18px;
+      border-radius: 3px;
+      margin-bottom: 20px;
+    }
+    .tl-items {
+      border-left: 2px solid var(--border);
+      margin-left: 10px;
+      padding-left: 28px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .tl-item { display: grid; grid-template-columns: 112px 1fr; gap: 16px; }
+    .tl-time {
+      font-size: var(--t-sm);
+      font-weight: 700;
+      color: var(--amber);
+      padding-top: 2px;
+      line-height: 1.4;
+    }
+    .tl-body h4 {
+      font-size: 15px;
+      font-weight: 700;
+      margin-bottom: 4px;
+      line-height: 1.4;
+    }
+    .tl-body p {
+      font-size: var(--t-sm);
+      color: var(--muted);
+      line-height: 1.7;
+      word-break: keep-all;
+    }
+    .tl-tag {
+      display: inline-block;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      background: rgba(200,132,26,.12);
+      color: var(--amber);
+      padding: 2px 8px;
+      border-radius: 2px;
+      margin-bottom: 5px;
+    }
+
+    /* ── OFFLEASH ────────────────────────── */
+    .ol-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 16px;
+      margin-top: 44px;
+    }
+    .ol-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 26px 22px;
+    }
+    .ol-card__num {
+      font-size: var(--t-xs);
+      font-weight: 700;
+      letter-spacing: .14em;
+      color: var(--amber);
+      margin-bottom: 8px;
+    }
+    .ol-card h3 { margin-bottom: 10px; }
+    .ol-card p { font-size: var(--t-sm); color: var(--muted); line-height: 1.75; }
+
+    /* ── BOOTH ───────────────────────────── */
+    .booth-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 12px;
+      margin-top: 36px;
+    }
+    .booth-item {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 18px 14px;
+      text-align: center;
+    }
+    .booth-item__icon { font-size: 24px; display: block; margin-bottom: 8px; }
+    .booth-item__name { font-size: var(--t-sm); font-weight: 700; margin-bottom: 4px; }
+    .booth-item__desc { font-size: var(--t-xs); color: var(--muted); line-height: 1.6; }
+
+    /* ── PRICING ─────────────────────────── */
+    .price-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 14px;
+      margin-top: 44px;
+    }
+    .price-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 24px 20px;
+      position: relative;
+    }
+    .price-card--pet { border-color: var(--amber); }
+    .price-card__badge {
+      position: absolute;
+      top: -11px; left: 18px;
+      background: var(--amber);
+      color: var(--white);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: .06em;
+      padding: 3px 12px;
+      border-radius: 20px;
+    }
+    .price-card__dur {
+      font-size: var(--t-xs);
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+    .price-card__type { font-size: var(--t-sm); font-weight: 700; margin-bottom: 2px; }
+    .price-card__site { font-size: var(--t-xs); color: var(--amber); margin-bottom: 12px; }
+    .price-card__amount {
+      font-family: var(--serif);
+      font-size: 26px;
+      font-weight: 700;
+      line-height: 1;
+      margin-bottom: 10px;
+    }
+    .price-card__amount em {
+      font-size: var(--t-sm);
+      font-style: normal;
+      font-family: var(--sans);
+      font-weight: 400;
+      color: var(--muted);
+    }
+    .price-card__incl {
+      font-size: var(--t-xs);
+      color: var(--muted);
+      line-height: 1.7;
+      border-top: 1px solid var(--border);
+      padding-top: 10px;
+      margin-top: 4px;
+    }
+    .price-card__kit {
+      display: inline-block;
+      margin-top: 8px;
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--green-mid);
+      background: rgba(42,74,20,.1);
+      padding: 3px 10px;
+      border-radius: 20px;
+    }
+
+    /* ── FAQ ─────────────────────────────── */
+    .faq { display: flex; flex-direction: column; gap: 0; margin-top: 44px; }
+    .faq-item { border-bottom: 1px solid var(--border); }
+    .faq-item:first-child { border-top: 1px solid var(--border); }
+    .faq-q {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      background: none;
+      border: none;
+      padding: 18px 0;
+      cursor: pointer;
+      text-align: left;
+      font-family: var(--sans);
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--text);
+      -webkit-tap-highlight-color: transparent;
+    }
+    .faq-q__icon {
+      flex-shrink: 0;
+      width: 22px; height: 22px;
+      border: 1px solid var(--border);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 14px;
+      color: var(--muted);
+      transition: transform .2s;
+    }
+    .faq-item.open .faq-q__icon { transform: rotate(45deg); }
+    .faq-a {
+      font-size: var(--t-sm);
+      color: var(--muted);
+      line-height: 1.8;
+      word-break: keep-all;
+      overflow: hidden;
+      max-height: 0;
+      transition: max-height .3s ease, padding .3s ease;
+      padding-bottom: 0;
+    }
+    .faq-item.open .faq-a { max-height: 400px; padding-bottom: 18px; }
+
+    /* ── QUOTE BAND ──────────────────────── */
+    .quote-band {
+      background: var(--green-mid);
+      padding: 72px 24px;
+      text-align: center;
+    }
+    .quote-band h2 {
+      color: var(--white);
+      max-width: 680px;
+      margin: 0 auto 12px;
+    }
+    .quote-band p { font-size: var(--t-sm); color: rgba(255,255,255,.4); }
+
+    /* ── CTA SECT ────────────────────────── */
+    .cta-sect {
+      background: var(--green);
+      padding: 96px 24px;
+      text-align: center;
+    }
+    .cta-sect h2 { color: var(--white); max-width: 640px; margin: 0 auto 12px; }
+    .cta-sect__sub { font-size: 16px; color: rgba(255,255,255,.6); margin-bottom: 8px; }
+    .cta-sect__info {
+      font-size: var(--t-sm);
+      color: rgba(255,255,255,.4);
+      line-height: 1.8;
+      margin-bottom: 36px;
+    }
+    .btn--cta {
+      background: var(--amber);
+      color: var(--white);
+      font-size: 17px;
+      padding: 18px 52px;
+    }
+    .cta-note { display: block; margin-top: 14px; font-size: var(--t-sm); color: rgba(255,255,255,.35); }
+
+    /* ── FOOTER ──────────────────────────── */
+    footer {
+      padding: 40px 24px;
+      text-align: center;
+      font-size: var(--t-sm);
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+      line-height: 2;
+    }
+
+    img.lazy { opacity: 0; transition: opacity .4s; }
+    img.lazy.loaded { opacity: 1; }
+
+    /* ── MOBILE ──────────────────────────── */
+    @media (max-width: 600px) {
+      :root { --sec: 60px; --sec-s: 48px; }
+      .hero { padding-bottom: 56px; }
+      .strip__item { padding: 16px 14px; min-width: 88px; }
+      .strip__val { font-size: 13px; }
+      .tl-item { grid-template-columns: 90px 1fr; gap: 10px; }
+      .btn--primary { font-size: 15px; padding: 14px 28px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ══ HERO ════════════════════════════════ -->
+<section class="hero" aria-label="메인 히어로">
+  <div class="hero__inner">
+    <span class="hero__badge">사단법인 강원도반려동물협회 · 웰니스고성 · 댕댕유랑단 주최</span>
+    <h1>털복숭이와 함께라면,<br>강원도 전체가 우리 마당</h1>
+    <p class="hero__sub">
+      캠핑, 트레킹, 별빛 아래 모닥불.<br>
+      300개 사이트 · 2박 3일 · 펫스카웃은 반려동물도 주인공입니다.
+    </p>
+    <div class="hero__ctas">
+      <a href="#register" class="btn btn--primary">지금 신청하기 →</a>
+      <a href="#schedule" class="btn btn--ghost">일정 보기</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ STRIP ════════════════════════════════ -->
+<div class="strip" role="complementary">
+  <div class="strip__item">
+    <span class="strip__label">Date</span>
+    <span class="strip__val">9.4(금) – 9.6(일)</span>
+  </div>
+  <div class="strip__item">
+    <span class="strip__label">Location</span>
+    <span class="strip__val">고성 세계잼버리 수련장</span>
+  </div>
+  <div class="strip__item">
+    <span class="strip__label">사이트</span>
+    <span class="strip__val">300개</span>
+  </div>
+  <div class="strip__item">
+    <span class="strip__label">규모</span>
+    <span class="strip__val">약 3,000명</span>
+  </div>
+  <div class="strip__item">
+    <span class="strip__label">속초 IC</span>
+    <span class="strip__val">15분</span>
+  </div>
+</div>
+
+<!-- ══ ABOUT ════════════════════════════════ -->
+<div class="wrap">
+  <div class="sec">
+    <span class="eyebrow">About</span>
+    <h2>반려견 데리고 캠핑은<br>힘들다고들 했습니다.</h2>
+    <p class="lead">
+      강원도에서 2박 3일.<br>
+      힘들었던 건 <strong>돌아오는 길뿐</strong>이었습니다.<br><br>
+      전국 최대 규모 캠핑·반려동물 복합 행사, 펫스카웃 2026.
+      반려동물 동반 가족부터 캠핑러까지 — 강원특별자치도 고성군,
+      속초 IC에서 단 15분 거리에서 펼쳐집니다.
+    </p>
+
+    <div class="site-row">
+      <div class="site-card">
+        <div class="site-card__num">90<span class="site-card__unit">개</span></div>
+        <div class="site-card__name">🐾 펫 동반 사이트</div>
+        <div class="site-card__size">10 × 10m</div>
+        <div class="site-card__desc">반려동물 전용 펜스 구역</div>
+      </div>
+      <div class="site-card">
+        <div class="site-card__num">129<span class="site-card__unit">개</span></div>
+        <div class="site-card__name">🏕 일반 사이트</div>
+        <div class="site-card__size">8 × 8m</div>
+        <div class="site-card__desc">사이트 내 차량 주차</div>
+      </div>
+      <div class="site-card">
+        <div class="site-card__num">68<span class="site-card__unit">개</span></div>
+        <div class="site-card__name">🚐 카라반·캠핑카</div>
+        <div class="site-card__size">8 × 4m</div>
+        <div class="site-card__desc">카라반·캠핑카 전용</div>
+      </div>
+      <div class="site-card">
+        <div class="site-card__num" style="font-size:26px;line-height:1.3;">VIP</div>
+        <div class="site-card__name">⭐ VIP 구역</div>
+        <div class="site-card__size">2개소</div>
+        <div class="site-card__desc">프리미엄 전용 공간</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr class="div">
+
+<!-- ══ SCHEDULE ══════════════════════════════ -->
+<div class="wrap" id="schedule">
+  <div class="sec">
+    <span class="eyebrow">Schedule</span>
+    <h2>2박 3일, 시간표</h2>
+    <p class="lead">입소부터 퇴소까지 — 9월 6일 오후 5시 전 별도 절차 없이 자유 퇴장.</p>
+
+    <div class="tl">
+
+      <!-- DAY 1 -->
+      <div class="tl-day">
+        <div class="tl-day__head">🏕 Day 1 · 9월 4일 (금)</div>
+        <div class="tl-items">
+          <div class="tl-item">
+            <div class="tl-time">낮 12시~</div>
+            <div class="tl-body">
+              <span class="tl-tag">입소</span>
+              <h4>캠핑 참가자 입소 · 사이트 설치</h4>
+              <p>사이트 내 차량 직접 주차. 텐트와 장비를 설치하며 자리를 잡습니다. 입장 입구에서 예매 확인 후 웰컴 키트를 수령합니다.</p>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-time">19:00–20:30</div>
+            <div class="tl-body">
+              <span class="tl-tag">공연</span>
+              <h4>인디밴드 A팀 — 메인 무대 오프닝</h4>
+              <p>해가 지는 고성의 하늘 아래 첫 번째 라이브 공연. 캠핑의 첫날 밤을 여는 무대입니다.</p>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-time">20:30–22:00</div>
+            <div class="tl-body">
+              <span class="tl-tag">공연</span>
+              <h4>인디밴드 B팀 — 나이트 세션</h4>
+              <p>어쿠스틱과 인디 사운드로 이어지는 두 번째 무대. 별이 뜨는 시간에 맞춰 셋리스트가 구성됩니다.</p>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-time">22:00 ~</div>
+            <div class="tl-body">
+              <span class="tl-tag">야간 프로그램</span>
+              <h4>캠프파이어</h4>
+              <p>브랜드존 중앙 광장에서 타오르는 모닥불. 처음 만난 캠퍼와 반려견들이 한자리에 모이는 첫날의 하이라이트.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- DAY 2 오전 -->
+      <div class="tl-day">
+        <div class="tl-day__head">🐾 Day 2 오전 · 9월 5일 (토)</div>
+        <div class="tl-items">
+          <div class="tl-item">
+            <div class="tl-time">07:00–08:30</div>
+            <div class="tl-body">
+              <span class="tl-tag">힐링</span>
+              <h4>선라이즈 요가 — 반려견 동반 가능</h4>
+              <p>고성의 아침 공기를 마시며 반려견과 함께하는 요가. 브랜드존에서 진행하며 무료 참여 가능합니다 (사전 신청 우선).</p>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-time">10:00–12:00</div>
+            <div class="tl-body">
+              <span class="tl-tag">힐링</span>
+              <h4>심신안정 명상</h4>
+              <p>자연 속에서 진행하는 명상 프로그램. 캠핑의 피로를 풀고 하루를 여는 시간.</p>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-time">10:00–12:00</div>
+            <div class="tl-body">
+              <span class="tl-tag">펫 퍼포먼스</span>
+              <h4>어질리티 쇼 — 국가대표급 핸들러</h4>
+              <p>오프리쉬존에서 펼쳐지는 장애물 코스 스피드 경기. 훈련된 반려견이 보여주는 퍼포먼스는 처음 보면 입이 벌어집니다.</p>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-time">10:00 ~ 상시</div>
+            <div class="tl-body">
+              <span class="tl-tag">펫 퍼포먼스</span>
+              <h4>도그쇼 IGP 퍼포먼스</h4>
+              <p>복종·추적·방호 종합 퍼포먼스. 국가대표급 핸들러와 훈련견이 함께 선보이는 독스포츠의 정점.</p>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-time">14:00–16:00</div>
+            <div class="tl-body">
+              <span class="tl-tag">참여형 이벤트</span>
+              <h4>강아지 장기자랑 + 카카오톡 빙고게임</h4>
+              <p>무대 위에서 펼쳐지는 반려견 장기자랑. 카카오톡 채널을 통해 실시간 빙고게임·초성맞추기 참여. 경품 증정.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- DAY 2 오후 -->
+      <div class="tl-day">
+        <div class="tl-day__head">🎵 Day 2 오후·저녁 · 9월 5일 (토)</div>
+        <div class="tl-items">
+          <div class="tl-item">
+            <div class="tl-time">16:00–17:00</div>
+            <div class="tl-body">
+              <span class="tl-tag">★ 하이라이트</span>
+              <h4>펫케스트라 🎻 — 반려견이 좋아하는 오케스트라</h4>
+              <p>반려견의 청각에 맞게 편곡된 오케스트라 공연. 음악을 듣는 반려견과 보호자의 반응이 이 행사의 백미입니다. 전국 최초.</p>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-time">16:00–17:00</div>
+            <div class="tl-body">
+              <span class="tl-tag">공연</span>
+              <h4>인디밴드 C팀</h4>
+              <p>낮과 저녁 사이, 오후의 메인 무대 라이브 공연.</p>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-time">19:00–20:30</div>
+            <div class="tl-body">
+              <span class="tl-tag">공연</span>
+              <h4>인디밴드 D팀 — 저녁 클라이맥스</h4>
+              <p>2일차 저녁을 장식하는 메인 라이브 공연. 고성의 밤하늘 아래 가장 뜨거운 무대.</p>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-time">20:30–22:00</div>
+            <div class="tl-body">
+              <span class="tl-tag">야간 프로그램</span>
+              <h4>캠프파이어 — 이틀째 밤</h4>
+              <p>브랜드존 중앙 광장. 이틀을 함께한 캠퍼들과 더 깊어진 밤을 보냅니다.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- DAY 3 -->
+      <div class="tl-day">
+        <div class="tl-day__head">🌅 Day 3 · 9월 6일 (일)</div>
+        <div class="tl-items">
+          <div class="tl-item">
+            <div class="tl-time">07:00–08:30</div>
+            <div class="tl-body">
+              <span class="tl-tag">힐링</span>
+              <h4>마지막 아침 — 선라이즈 요가</h4>
+              <p>캠핑의 마지막 아침을 반려견과 함께. 브랜드존에서 진행하는 힐링 요가 & 명상 프로그램.</p>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-time">오전 ~</div>
+            <div class="tl-body">
+              <span class="tl-tag">자유</span>
+              <h4>자유 시간 · 사이트 정리</h4>
+              <p>오후 5시 전까지 자유롭게 퇴소. 별도 퇴소 절차 없음. 마지막까지 고성을 충분히 즐기세요.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /tl -->
+  </div>
+</div>
+
+<hr class="div">
+
+<!-- ══ OFFLEASH ═══════════════════════════════ -->
+<div class="wrap">
+  <div class="sec">
+    <span class="eyebrow">Pet Zone</span>
+    <h2>오프리쉬존 — 4가지 컨셉</h2>
+    <p class="lead">리드줄을 푸는 순간, 강아지는 처음으로 진짜 자유를 압니다.</p>
+
+    <div class="ol-grid">
+      <div class="ol-card">
+        <div class="ol-card__num">01</div>
+        <h3>⚽ 반려인 축구 오프리쉬</h3>
+        <p>반려인끼리 팀을 짜서 축구 경기. 강아지들이 경기장을 자유롭게 뛰어다니며 방해하는 변수 속에서 승부를 겨루는 참여형 이벤트.</p>
+      </div>
+      <div class="ol-card">
+        <div class="ol-card__num">02</div>
+        <h3>👃 대형 노즈워크 오프리쉬</h3>
+        <p>대형 노즈워크 천으로 구성된 넓은 탐색 공간. 바닥 곳곳에 숨겨진 냄새와 간식을 찾아 마음껏 탐색합니다.</p>
+      </div>
+      <div class="ol-card">
+        <div class="ol-card__num">03</div>
+        <h3>🔒 프라이빗 오프리쉬</h3>
+        <p>사납거나 겁이 많은 반려견 전용. 1인 독립 공간으로 다른 반려견과 완전히 분리되어 안심하고 이용할 수 있습니다.</p>
+      </div>
+      <div class="ol-card">
+        <div class="ol-card__num">04</div>
+        <h3>🛁 셀프 목욕 트럭 + 사회성존</h3>
+        <p>캠핑 후 반려견을 직접 씻길 수 있는 목욕 트럭 렌트 운영. 공간 절반은 사회성이 서투른 반려견을 위한 적응형 소그룹 공간.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ QUOTE ════════════════════════════════ -->
+<div class="quote-band">
+  <h2>"300개의 텐트, 2박 3일,<br>그리고 당신 개의 첫 번째 캠핑."</h2>
+  <p>전국 최대 규모 반려동물 캠핑 페스티벌 · 강원도 고성</p>
+</div>
+
+<!-- ══ EXPERIENCE ════════════════════════════ -->
+<div class="wrap">
+  <div class="sec">
+    <span class="eyebrow">Experience</span>
+    <h2>체험 부스</h2>
+    <p class="lead">오프리쉬존과 함께 09:00~18:00 상시 운영.</p>
+
+    <div class="booth-grid">
+      <div class="booth-item">
+        <span class="booth-item__icon">🐾</span>
+        <div class="booth-item__name">반려견 연고 만들기</div>
+        <div class="booth-item__desc">발바닥 보호용 천연 연고 직접 제작</div>
+      </div>
+      <div class="booth-item">
+        <span class="booth-item__icon">🎴</span>
+        <div class="booth-item__name">타로 체험</div>
+        <div class="booth-item__desc">반려동물과 함께하는 타로</div>
+      </div>
+      <div class="booth-item">
+        <span class="booth-item__icon">🎨</span>
+        <div class="booth-item__name">캐리커쳐</div>
+        <div class="booth-item__desc">반려동물 캐리커쳐 현장 제작</div>
+      </div>
+      <div class="booth-item">
+        <span class="booth-item__icon">📷</span>
+        <div class="booth-item__name">코닥 포토부스</div>
+        <div class="booth-item__desc">즉석 사진 촬영 및 인화</div>
+      </div>
+      <div class="booth-item">
+        <span class="booth-item__icon">🌸</span>
+        <div class="booth-item__name">향수 만들기</div>
+        <div class="booth-item__desc">나만의 향수 조향 체험</div>
+      </div>
+      <div class="booth-item">
+        <span class="booth-item__icon">📋</span>
+        <div class="booth-item__name">동물등록 부스</div>
+        <div class="booth-item__desc">현장 등록 지원 및 홍보</div>
+      </div>
+      <div class="booth-item">
+        <span class="booth-item__icon">🦮</span>
+        <div class="booth-item__name">행동교정 상담</div>
+        <div class="booth-item__desc">전문 훈련사 무료 상담·시연</div>
+      </div>
+      <div class="booth-item">
+        <span class="booth-item__icon">🩺</span>
+        <div class="booth-item__name">수의사 건강검진</div>
+        <div class="booth-item__desc">체중·피부·치아 기본 체크</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr class="div">
+
+<!-- ══ PRICING ════════════════════════════════ -->
+<div class="wrap" id="register">
+  <div class="sec">
+    <span class="eyebrow">Pricing</span>
+    <h2>참가비 안내</h2>
+    <p class="lead">캠핑 참가 시 <strong>웰컴 키트 증정</strong>. 선착순 마감 — 신청기간 2026. 05. 말 ~ 08. 31.</p>
+
+    <div class="price-grid">
+      <div class="price-card">
+        <div class="price-card__dur">당일 방문</div>
+        <div class="price-card__type">당일 관람</div>
+        <div class="price-card__site">외부 주차 후 도보 입장</div>
+        <div class="price-card__amount">10,000<em>원</em></div>
+        <div class="price-card__incl">
+          온라인 사전예약 10,000원<br>
+          현장 접수 20,000원
+        </div>
+      </div>
+
+      <div class="price-card">
+        <div class="price-card__dur">1박 2일</div>
+        <div class="price-card__type">일반 캠핑</div>
+        <div class="price-card__site">8×8m 사이트</div>
+        <div class="price-card__amount">85,000<em>원/인</em></div>
+        <div class="price-card__incl">사이트 내 차량 주차 포함</div>
+        <span class="price-card__kit">🎁 웰컴 키트 증정</span>
+      </div>
+
+      <div class="price-card price-card--pet">
+        <span class="price-card__badge">반려동물 동반</span>
+        <div class="price-card__dur" style="margin-top:8px;">1박 2일</div>
+        <div class="price-card__type">펫 동반 캠핑</div>
+        <div class="price-card__site">10×10m 펜스 구역</div>
+        <div class="price-card__amount">105,000<em>원/인</em></div>
+        <div class="price-card__incl">반려동물 전용 펜스 사이트</div>
+        <span class="price-card__kit">🎁 웰컴 키트 증정</span>
+      </div>
+
+      <div class="price-card price-card--pet">
+        <span class="price-card__badge">프라이빗 펜스</span>
+        <div class="price-card__dur" style="margin-top:8px;">1박 2일</div>
+        <div class="price-card__type">펜스 전용</div>
+        <div class="price-card__site">10×10m 독립 펜스</div>
+        <div class="price-card__amount">135,000<em>원/인</em></div>
+        <div class="price-card__incl">완전 독립 펜스 구역</div>
+        <span class="price-card__kit">🎁 웰컴 키트 증정</span>
+      </div>
+
+      <div class="price-card">
+        <div class="price-card__dur">2박 3일</div>
+        <div class="price-card__type">일반 캠핑</div>
+        <div class="price-card__site">8×8m 사이트</div>
+        <div class="price-card__amount">135,000<em>원/인</em></div>
+        <div class="price-card__incl">사이트 내 차량 주차 포함</div>
+        <span class="price-card__kit">🎁 웰컴 키트 증정</span>
+      </div>
+
+      <div class="price-card price-card--pet">
+        <span class="price-card__badge">추천</span>
+        <div class="price-card__dur" style="margin-top:8px;">2박 3일</div>
+        <div class="price-card__type">펫 동반 캠핑</div>
+        <div class="price-card__site">10×10m 펜스 구역</div>
+        <div class="price-card__amount">155,000<em>원/인</em></div>
+        <div class="price-card__incl">반려동물 전용 펜스 사이트</div>
+        <span class="price-card__kit">🎁 웰컴 키트 증정</span>
+      </div>
+
+      <div class="price-card price-card--pet">
+        <span class="price-card__badge">프라이빗 펜스</span>
+        <div class="price-card__dur" style="margin-top:8px;">2박 3일</div>
+        <div class="price-card__type">펜스 전용</div>
+        <div class="price-card__site">10×10m 독립 펜스</div>
+        <div class="price-card__amount">185,000<em>원/인</em></div>
+        <div class="price-card__incl">완전 독립 펜스 구역</div>
+        <span class="price-card__kit">🎁 웰컴 키트 증정</span>
+      </div>
+    </div>
+
+    <p style="margin-top:20px;font-size:var(--t-xs);color:var(--muted);line-height:1.9;">
+      * 입소·예매 확인·현장 접수·웰컴 키트 수령 모두 입장 입구에서 진행<br>
+      * 반려동물 동반 시 동물등록증 및 국가등록칩 확인 필수<br>
+      * 퇴소 별도 절차 없음 — 9월 6일 오후 5시까지 자유 퇴장<br>
+      * 선착순 마감 · 조기 마감 가능
+    </p>
+  </div>
+</div>
+
+<hr class="div">
+
+<!-- ══ FAQ ══════════════════════════════════ -->
+<div class="wrap">
+  <div class="sec--s">
+    <span class="eyebrow">FAQ</span>
+    <h2>자주 묻는 질문</h2>
+
+    <div class="faq">
+      <div class="faq-item">
+        <button class="faq-q">
+          반려동물 동물등록이 안 되어 있으면 참가할 수 없나요?
+          <span class="faq-q__icon">+</span>
+        </button>
+        <div class="faq-a">동물등록증 및 국가등록칩 확인이 반려동물 동반 사이트 입장의 필수 조건입니다. 등록이 안 된 경우 행사장 내 동물등록 부스에서 현장 등록 지원을 받으실 수 있습니다. 단, 사전에 미리 등록하고 오시는 것을 권장합니다.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">
+          캠핑 장비가 없어도 참가할 수 있나요?
+          <span class="faq-q__icon">+</span>
+        </button>
+        <div class="faq-a">카라반·캠핑카존(68개)은 차량이 있으면 장비 없이 참가 가능합니다. 텐트가 필요한 일반 사이트 및 펫 동반 사이트는 개인 텐트와 기본 장비를 지참하셔야 합니다. 캠핑 장비 렌탈 업체와의 협업은 추후 공지 예정입니다.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">
+          고양이나 강아지 외 다른 반려동물도 가능한가요?
+          <span class="faq-q__icon">+</span>
+        </button>
+        <div class="faq-a">현재 프로그램은 반려견 중심으로 구성되어 있습니다. 고양이 등 다른 반려동물의 동반 참가 여부는 신청 시 별도 문의해 주세요 (033-813-0333). 반려동물의 안전을 최우선으로 판단하여 안내드립니다.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">
+          비가 오면 행사가 취소되나요?
+          <span class="faq-q__icon">+</span>
+        </button>
+        <div class="faq-a">소나기 등 일시적 강우는 야외 행사를 잠시 중단 후 재개합니다. 지속적인 강우는 공연·무대 일정을 조정하고, 브랜드존·체험 부스는 지붕 구조물로 운영을 유지합니다. 기상특보 발령 시에는 실내·그늘막으로 대체 진행하며, 참가자에게 실시간 문자로 공지합니다.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">
+          주차는 어떻게 되나요?
+          <span class="faq-q__icon">+</span>
+        </button>
+        <div class="faq-a">캠핑 참가자는 사이트 내 차량을 직접 주차합니다 (별도 주차 요금 없음). 당일 방문자는 외부 주차장 이용 후 도보 입장. 셔틀버스 운영 예정입니다 (상세 노선 추후 공지).</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">
+          취소 및 환불은 어떻게 되나요?
+          <span class="faq-q__icon">+</span>
+        </button>
+        <div class="faq-a">취소·환불 정책은 신청 플랫폼 오픈 시 공지됩니다. 현재 문의는 강원도반려동물협회(033-813-0333)로 연락해 주세요.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">
+          펫케스트라는 어떤 프로그램인가요?
+          <span class="faq-q__icon">+</span>
+        </button>
+        <div class="faq-a">반려견의 청각 특성에 맞게 편곡된 오케스트라 공연입니다. 반려견이 반응하는 주파수 대역과 템포를 고려해 편성하며, 음악을 듣는 반려견의 반응을 함께 관찰하는 특별한 경험입니다. 9월 5일 오후 16:00 메인 무대에서 진행됩니다.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ FINAL CTA ══════════════════════════════ -->
+<section class="cta-sect" aria-label="참가 신청">
+  <h2>속초에서 15분.<br>강아지가 평생 맡아본 것 중<br>가장 좋은 냄새.</h2>
+  <p class="cta-sect__sub">고성 세계잼버리 수련장 · 2026. 09. 04 – 06</p>
+  <p class="cta-sect__info">
+    선착순 300사이트 · 신청기간 2026. 05. 말 ~ 08. 31.<br>
+    조기 마감 가능 — 서두르세요.
+  </p>
+  <a href="[신청링크]" class="btn btn--cta" id="cta-btn">지금 신청하기 →</a>
+  <span class="cta-note">당일 방문 사전예약 10,000원 (현장 접수 20,000원)</span>
+</section>
+
+<!-- ══ FOOTER ═════════════════════════════════ -->
+<footer>
+  <p><strong>2026 Welcome 세계잼버리 Camping &amp; PetScout Festival</strong></p>
+  <p>주최: 사단법인 강원도반려동물협회 · 웰니스고성 · 댕댕유랑단</p>
+  <p>후원: 강원특별자치도 · 유한양행 · 나투어리베 · SB바이오팜 · 롯데건설 · 롯데제과</p>
+  <p>문의: 033-813-0333</p>
+  <p style="margin-top:12px;font-size:var(--t-xs);">© 2026 강원도반려동물협회 · 운영지원 To. Agency</p>
+</footer>
+
+<script>
+  // Lazy loading
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (!e.isIntersecting) return;
+        const img = e.target;
+        img.src = img.dataset.src;
+        img.classList.add('loaded');
+        io.unobserve(img);
+      });
+    }, { rootMargin: '200px' });
+    document.querySelectorAll('img.lazy').forEach(img => io.observe(img));
+  }
+
+  // 터치 최적화
+  document.querySelectorAll('a, button').forEach(el => {
+    el.addEventListener('touchstart', () => {}, { passive: true });
+  });
+
+  // FAQ 아코디언
+  document.querySelectorAll('.faq-item').forEach(item => {
+    item.querySelector('.faq-q').addEventListener('click', () => {
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+      if (!isOpen) item.classList.add('open');
+    });
+  });
+
+  // 신청 링크 미설정 안내
+  document.getElementById('cta-btn').addEventListener('click', function(e) {
+    if (this.getAttribute('href') === '[신청링크]') {
+      e.preventDefault();
+      alert('신청 링크가 2026년 5월 말 오픈됩니다.\n문의: 033-813-0333 🐾');
+    }
+  });
+</script>
+</body>
+</html>
