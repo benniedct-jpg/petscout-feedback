@@ -136,12 +136,22 @@
       margin-bottom: 24px;
     }
     .hero h1 {
-      font-family: var(--serif);
-      font-size: var(--t-hero);
-      line-height: 1.2;
+      font-family: var(--sans);
+      font-size: clamp(32px, 6.5vw, 72px);
+      font-weight: 700;
+      line-height: 1.08;
+      letter-spacing: -.01em;
       color: var(--white);
-      word-break: keep-all;
-      margin-bottom: 18px;
+      text-transform: uppercase;
+      word-break: break-word;
+      margin-bottom: 14px;
+    }
+    .hero__ko {
+      font-size: clamp(13px, 1.4vw, 16px);
+      font-weight: 500;
+      color: rgba(255,255,255,.5);
+      letter-spacing: .06em;
+      margin-bottom: 28px;
     }
     .hero__sub {
       font-size: clamp(15px, 1.8vw, 18px);
@@ -510,10 +520,11 @@
 <section class="hero" aria-label="메인 히어로">
   <div class="hero__inner">
     <span class="hero__badge">사단법인 강원도반려동물협회 · 웰니스고성 · 댕댕유랑단 주최</span>
-    <h1>털복숭이와 함께라면,<br>강원도 전체가 우리 마당</h1>
+    <h1>Gangwondo Goseong<br>Camping &amp; PetScout<br>Festival</h1>
+    <p class="hero__ko">강원도 고성 캠핑 &amp; 펫스카웃 행사</p>
     <p class="hero__sub">
-      캠핑, 트레킹, 별빛 아래 모닥불.<br>
-      300개 사이트 · 2박 3일 · 펫스카웃은 반려동물도 주인공입니다.
+      강아지는 기억하지 못합니다.<br>
+      그래서 매년 데려가야 합니다.
     </p>
     <div class="hero__ctas">
       <a href="#register" class="btn btn--primary">지금 신청하기 →</a>
